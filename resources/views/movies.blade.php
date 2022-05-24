@@ -5,7 +5,7 @@ Movies app
 @endsection
 
 @section('content')
-<h1>Welcome page</h1>
+<h1>All movies</h1>
 
 <div class="container">
     <div class="row">

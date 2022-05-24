@@ -18,6 +18,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
 Route::get('/movies', [MovieController::class, 'index']);
-Route::get('/movies/create', [MovieController::class, 'create']);
+Route::get('/create', [MovieController::class, 'create']);
+Route::post('/create', [MovieController::class, 'store']);
 Route::get('/movies/{movie}', [MovieController::class, 'show']);
