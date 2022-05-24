@@ -19,6 +19,9 @@
                     <p class="btn btn-info">Director: {{ $movie->director }}</p>
                     <p class="btn btn-warning">Year: {{ $movie->year }}</p>
                 </div>
+                @foreach($movie->comments as $comment)
+                <p>{{ $comment->content }}</p>
+                @endforeach
             </div>
         </div>
     </div>
